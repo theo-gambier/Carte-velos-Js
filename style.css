@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/* Taille de la carte */
+#mapid {
+    width: 900px;
+    height: 600px;
+    margin: 10px auto;
+}
+
+/* Style du marqueur */
+.containerPin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    position: relative;
+}
+
+/* Image principale du marqueur */
+.imagePin{
+    width: 50px;
+    height: 50px;
+}
+
+/* Informations complémentaires du marqueur */
+#containerInfoPin{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 5px;
+}
+
+.infoPin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoPin img {
+    width: 20px !important;
+}
+
+/* Style de la popup */
+.containerPopup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerStatut {
+    width: 100%;
+    text-align: center;
+}
+
+.containerBanking, .containerCapacity {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 5px 0;
+}
+
+.containerBanking .dataData, .containerCapacity .dataData {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerBanking .dataTitle, .containerCapacity .dataTitle {
+    width: 45%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
